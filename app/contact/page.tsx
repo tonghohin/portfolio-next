@@ -21,7 +21,6 @@ export default function Page() {
                     <span>t</span> <span>m</span>
                     <span>e</span>
                 </h1>
-                <p className="slideIn">(778) - 321 - 3740</p>
                 <p className="slideIn">
                     <a id="mail" href="mailto:tonghohin77@gmail.com">
                         tonghohin77@gmail.com
