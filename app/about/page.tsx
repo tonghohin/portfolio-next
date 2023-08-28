@@ -101,6 +101,10 @@ export default function Page() {
                         <Image src="/icons/docker.svg" alt="Docker Icon" width={30} height={30} />
                         <p>Docker</p>
                     </div>
+                    <div className="iconWithText">
+                        <Image src="/icons/github-actions.svg" alt="Github Actions Icon" width={30} height={30} />
+                        <p>Github Actions</p>
+                    </div>
                 </div>
             </article>
             <FunFacts />

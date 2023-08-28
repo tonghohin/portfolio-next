@@ -26,7 +26,7 @@ export default function Page() {
                     Proficient in both SQL and NoSQL. Experienced in using <em>MySQL</em>, <em>SQLite</em>, <em>MongoDB</em>, <em>Firebase</em> and <em>GraphQL</em>.
                 </p>
                 <p>
-                    Experienced in using source control system such as <em>Git</em>. Familiar with <em>Agile</em> methodology and comfortable in using <em>Jira</em>. Good knowledge of testing applications with <em>Jest</em>. Basic knowledge of <em>Docker</em>
+                    Experienced in using source control system such as <em>Git</em>. Familiar with <em>Agile</em> methodology and comfortable in using <em>Jira</em>. Good knowledge of testing applications with <em>Jest</em>. Enjoy building containerized applications with <em>Docker</em> and implementing CI/CD with <em>Github Actions</em>.
                 </p>
                 <Link href="/work" id="previousWork">
                     See my previous work!
@@ -61,9 +61,10 @@ export default function Page() {
                 <li id="others">
                     <p>Others</p>
                     <Image src="/icons/git.svg" alt="Git Icon" width={30} height={30} />
+                    <Image src="/icons/github-actions.svg" alt="Github Actions Icon" width={30} height={30} />
+                    <Image src="/icons/docker.svg" alt="Docker Icon" width={30} height={30} />
                     <Image src="/icons/jest.svg" alt="Jest Icon" width={30} height={30} />
                     <Image src="/icons/jira.svg" alt="Jira Icon" width={30} height={30} />
-                    <Image src="/icons/docker.svg" alt="Docker Icon" width={30} height={30} />
                 </li>
             </ul>
         </main>

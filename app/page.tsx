@@ -12,7 +12,7 @@ export default function Page() {
             <p className="typewriter" id="thirdSentence">
                 Developer.
             </p>
-            <footer>JavaScript, TypeScript, React, Express, MongoDB, SQL and more...</footer>
+            <footer>TypeScript, React, Next.js, Express, MongoDB, SQL and more...</footer>
         </main>
     );
 }
