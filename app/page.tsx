@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./home.css";
 
 export default function Page() {
@@ -13,6 +14,9 @@ export default function Page() {
                 Developer.
             </p>
             <footer>TypeScript, React, Next.js, Express, MongoDB, SQL and more...</footer>
+            <Link href="/work" id="previousWork">
+                See my previous work!
+            </Link>
         </main>
     );
 }
