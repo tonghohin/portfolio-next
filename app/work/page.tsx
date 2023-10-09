@@ -100,7 +100,7 @@ export default function Page() {
                         </p>
                     </div>
                     <Image alt="Weather Forecast App Work Sample" src="/images/work-weather.webp" width={600} height={500} />
-                    <a target="_blank" href="https://tonghohin.github.io/weatherForecastApp/"></a>
+                    <a target="_blank" href="https://tonghohin.github.io/weather-forecast-app/"></a>
                 </article>
             </section>
         </main>
