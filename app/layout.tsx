@@ -13,7 +13,8 @@ export const metadata: Metadata = {
     description: "Hi there! I'm Hin, a full stack developer based in Canada. Get in touch with me!",
     keywords: ["Full Stack", "Developer", "Canada", "Hin Tong"],
     other: {
-        "msvalidate.01": "AD17407C3C9846839130F82E96DA68F6"
+        "msvalidate.01": "AD17407C3C9846839130F82E96DA68F6",
+        "google-site-verification": "2LN9DEDc4V6MxSyl_z25KsXjm-D39d8SWmubhBCW9Vc"
     }
 };
 
