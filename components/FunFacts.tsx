@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function FunFacts() {
-    const FUN_FACTS = ["Click to see a random fun fact about me!", "I've been playing guitar for more than 10 years.", "I cycled around whole Taiwan.", "I did skydiving twice.", "I swam under the Victoria Falls.", "I'm fluent in three languages.", "My favourite movie is Pulp Fiction.", "I'm looking for a software developer job.", "My favourite song is Comfortably Numb.", "That's all! Thanks for stopping by!"];
+    const FUN_FACTS = ["Click to see a random fun fact about me!", "I've been playing guitar for more than 10 years.", "I cycled around whole Taiwan.", "I did skydiving twice.", "I swam under the Victoria Falls.", "I'm fluent in three languages.", "My favourite movie is Pulp Fiction.", "My favourite song is Comfortably Numb.", "That's all! Thanks for stopping by!"];
     const MAX_COUNT = FUN_FACTS.length - 1;
 
     const [count, setCount] = useState(0);
