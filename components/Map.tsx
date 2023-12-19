@@ -40,7 +40,7 @@ export default function Map() {
                 console.error(error);
             }
         })();
-    }, []);
+    }, [MY_LAT_LNG, loader, mapOptions]);
 
     return <section id="map" ref={mapRef} />;
 }
