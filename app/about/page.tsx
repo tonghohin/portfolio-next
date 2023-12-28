@@ -12,9 +12,9 @@ export default function Page() {
         <main id="about">
             <header>
                 <h1>About</h1>
-                <a href="/Resume_Hin Tong.pdf" download="Resume_Hin_Tong" target="_blank" rel="noreferrer" id="pdf">
+                {/* <a href="/Resume_Hin Tong.pdf" download="Resume_Hin_Tong" target="_blank" rel="noreferrer" id="pdf">
                     Get my resume!
-                </a>
+                </a> */}
             </header>
             <article>
                 <h3>WHO AM I</h3>
