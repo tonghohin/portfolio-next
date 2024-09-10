@@ -1,6 +1,6 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import "./work.css";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Hin | Full Stack Developer - Work"
@@ -90,7 +90,7 @@ export default function Page() {
                         </p>
                     </div>
                     <Image alt="Halifax Bus Tracker App Work Sample" src="/images/work-bus.webp" width={600} height={500} />
-                    <a target="_blank" href="https://halifaxbus.cyclic.app"></a>
+                    <a target="_blank" href="https://halifax-bus-tracker.vercel.app"></a>
                 </article>
                 <article>
                     <div>
