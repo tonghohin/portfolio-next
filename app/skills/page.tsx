@@ -20,13 +20,13 @@ export default function Page() {
                     <span>s</span>
                 </h1>
                 <p>
-                    Skilled in designing, developing and testing websites and applications with technologies including <em>JavaScript</em>, <em>TypeScript</em>, <em>React</em>, <em>Next.js</em>, <em>Redux</em>, <em>Node.js</em>, <em>Express</em>, <em>Tailwind CSS</em>, <em>React Native</em>, <em>Electron</em>, <em>HTML</em> and <em>CSS</em>.
+                    Skilled in designing, developing and testing websites and applications with technologies including <em>JavaScript</em>, <em>TypeScript</em>, <em>Go</em>, <em>React</em>, <em>Next.js</em>, <em>Redux</em>, <em>Node.js</em>, <em>Express</em>, <em>Tailwind CSS</em>, <em>HTML</em> and <em>CSS</em>.
                 </p>
                 <p>
-                    Proficient in both SQL and NoSQL. Experienced in using <em>MySQL</em>, <em>SQLite</em>, <em>MongoDB</em>, <em>Firebase</em> and <em>GraphQL</em>.
+                    Proficient in both SQL and NoSQL. Experienced in using <em>MySQL</em>, <em>SQLite</em>, <em>MongoDB</em> and <em>Firebase</em>.
                 </p>
                 <p>
-                    Experienced in using source control system such as <em>Git</em>. Familiar with <em>Agile</em> methodology and comfortable in using <em>Jira</em>. Good knowledge of testing applications with <em>Jest</em>. Enjoy building containerized applications with <em>Docker</em> and implementing CI/CD with <em>Github Actions</em>.
+                    Experienced in using <em>AWS</em> services such as <em>ECS</em>, <em>ELB</em>, <em>S3</em> and <em>SES</em>. Good knowledge of testing applications with <em>Jest</em>. Enjoy building containerized applications with <em>Docker</em> and implementing CI/CD with <em>Github Actions</em>.
                 </p>
                 <Link href="/work" id="previousWork">
                     See my previous work!
@@ -35,21 +35,17 @@ export default function Page() {
             <ul id="skillsGraph">
                 <li id="frontend">
                     <p>Frontend</p>
-                    <Image src="/icons/javascript.svg" alt="Javascript Icon" width={30} height={30} />
                     <Image src="/icons/typescript.svg" alt="Typescript Icon" width={30} height={30} />
-                    <Image src="/icons/react.svg" alt="React Icon" width={30} height={30} />
                     <Image src="/icons/nextJs.svg" alt="NextJs Icon" width={30} height={30} />
-                    <Image src="/icons/redux.svg" alt="Redux Icon" width={30} height={30} />
                     <Image src="/icons/tailwind.svg" alt="Tailwind Icon" width={30} height={30} />
-                    {/* <Image src="/icons/electron.svg" alt="Electron Icon" width={30} height={30} />
-                    <Image src="/icons/html.svg" alt="HTML Icon" width={30} height={30} />
-                    <Image src="/icons/css.svg" alt="CSS Icon" width={30} height={30} /> */}
+                    <Image src="/icons/react.svg" alt="React Icon" width={30} height={30} />
+                    <Image src="/icons/redux.svg" alt="Redux Icon" width={30} height={30} />
                 </li>
                 <li id="backend">
                     <p>Backend</p>
                     <Image src="/icons/nodejs.svg" alt="NodeJs Icon" width={30} height={30} />
                     <Image src="/icons/express.svg" alt="Express Icon" width={30} height={30} />
-                    <Image src="/icons/graphql.svg" alt="GraphQL Icon" width={30} height={30} />
+                    <Image src="/icons/go.svg" alt="Go Icon" width={30} height={30} />
                 </li>
                 <li id="database">
                     <p>Database</p>
@@ -62,9 +58,9 @@ export default function Page() {
                     <p>Others</p>
                     <Image src="/icons/git.svg" alt="Git Icon" width={30} height={30} />
                     <Image src="/icons/github-actions.svg" alt="Github Actions Icon" width={30} height={30} />
+                    <Image src="/icons/aws.svg" alt="AWS Icon" width={30} height={30} />
                     <Image src="/icons/docker.svg" alt="Docker Icon" width={30} height={30} />
                     <Image src="/icons/jest.svg" alt="Jest Icon" width={30} height={30} />
-                    <Image src="/icons/jira.svg" alt="Jira Icon" width={30} height={30} />
                 </li>
             </ul>
         </main>

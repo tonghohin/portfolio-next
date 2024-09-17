@@ -12,9 +12,6 @@ export default function Page() {
         <main id="about">
             <header>
                 <h1>About</h1>
-                {/* <a href="/Resume_Hin Tong.pdf" download="Resume_Hin_Tong" target="_blank" rel="noreferrer" id="pdf">
-                    Get my resume!
-                </a> */}
             </header>
             <article>
                 <h3>WHO AM I</h3>
@@ -28,26 +25,16 @@ export default function Page() {
                 <h3>SKILLS</h3>
                 <div className="flexContainer">
                     <div className="iconWithText">
-                        <Image src="/icons/javascript.svg" alt="Javascript Icon" width={30} height={30} />
-                        <p>
-                            <p>JavaScript</p>
-                        </p>
-                    </div>
-                    <div className="iconWithText">
                         <Image src="/icons/typescript.svg" alt="Typescript Icon" width={30} height={30} />
                         <p>TypeScript</p>
-                    </div>
-                    <div className="iconWithText">
-                        <Image src="/icons/react.svg" alt="React Icon" width={30} height={30} />
-                        <p>React</p>
                     </div>
                     <div className="iconWithText">
                         <Image src="/icons/nextJs.svg" alt="NextJs Icon" width={30} height={30} />
                         <p>Next.js</p>
                     </div>
                     <div className="iconWithText">
-                        <Image src="/icons/redux.svg" alt="Redux Icon" width={30} height={30} />
-                        <p>Redux</p>
+                        <Image src="/icons/react.svg" alt="React Icon" width={30} height={30} />
+                        <p>React</p>
                     </div>
                     <div className="iconWithText">
                         <Image src="/icons/tailwind.svg" alt="Tailwind  Icon" width={30} height={30} />
@@ -70,20 +57,32 @@ export default function Page() {
                         <p>MongoDB</p>
                     </div>
                     <div className="iconWithText">
+                        <Image src="/icons/go.svg" alt="Go Icon" width={30} height={30} />
+                        <p>Go</p>
+                    </div>
+                    <div className="iconWithText">
+                        <Image src="/icons/docker.svg" alt="Docker Icon" width={30} height={30} />
+                        <p>Docker</p>
+                    </div>
+                    <div className="iconWithText">
+                        <Image src="/icons/aws.svg" alt="AWS Icon" width={30} height={30} />
+                        <p>AWS</p>
+                    </div>
+                    <div className="iconWithText">
+                        <Image src="/icons/github-actions.svg" alt="Github Actions Icon" width={30} height={30} />
+                        <p>Github Actions</p>
+                    </div>
+                    <div className="iconWithText">
+                        <Image src="/icons/javascript.svg" alt="Javascript Icon" width={30} height={30} />
+                        <p>JavaScript</p>
+                    </div>
+                    <div className="iconWithText">
+                        <Image src="/icons/redux.svg" alt="Redux Icon" width={30} height={30} />
+                        <p>Redux</p>
+                    </div>
+                    <div className="iconWithText">
                         <Image src="/icons/firebase.svg" alt="Firebase Icon" width={30} height={30} />
                         <p>Firebase</p>
-                    </div>
-                    <div className="iconWithText">
-                        <Image src="/icons/graphql.svg" alt="Graphql Icon" width={30} height={30} />
-                        <p>GraphQL</p>
-                    </div>
-                    <div className="iconWithText">
-                        <Image src="/icons/electron.svg" alt="Electron Icon" width={30} height={30} />
-                        <p>Electron</p>
-                    </div>
-                    <div className="iconWithText">
-                        <Image src="/icons/react.svg" alt="React Native Icon" width={30} height={30} />
-                        <p>React Native</p>
                     </div>
                     <div className="iconWithText">
                         <Image src="/icons/jest.svg" alt="Jest Icon" width={30} height={30} />
@@ -92,18 +91,6 @@ export default function Page() {
                     <div className="iconWithText">
                         <Image src="/icons/git.svg" alt="Git Icon" width={30} height={30} />
                         <p>Git</p>
-                    </div>
-                    <div className="iconWithText">
-                        <Image src="/icons/jira.svg" alt="Jira Icon" width={30} height={30} />
-                        <p>Jira</p>
-                    </div>
-                    <div className="iconWithText">
-                        <Image src="/icons/docker.svg" alt="Docker Icon" width={30} height={30} />
-                        <p>Docker</p>
-                    </div>
-                    <div className="iconWithText">
-                        <Image src="/icons/github-actions.svg" alt="Github Actions Icon" width={30} height={30} />
-                        <p>Github Actions</p>
                     </div>
                 </div>
             </article>
