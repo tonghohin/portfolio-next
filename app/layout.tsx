@@ -5,7 +5,7 @@ import Link from "next/link";
 import Script from "next/script";
 import "./style.css";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"], display: "swap", variable: "--roboto" });
+const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"], display: "swap" });
 
 export const metadata: Metadata = {
     authors: { name: "Hin Tong" },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en" className={`${roboto.variable}`}>
+        <html lang="en" className={`${roboto.className}`}>
             <head>
                 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon.png" />
                 <Script id="clarityScript" type="text/javascript">

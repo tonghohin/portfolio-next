@@ -9,7 +9,7 @@ export default function Map() {
         version: "weekly",
         libraries: ["places"]
     });
-    const MY_LAT_LNG = { lat: 44.6483278, lng: -63.5728179 };
+    const MY_LAT_LNG = { lat: 43.65107, lng: -79.347015 };
     const mapOptions: google.maps.MapOptions = {
         zoom: 8,
         center: MY_LAT_LNG,
@@ -27,15 +27,13 @@ export default function Map() {
         (async () => {
             try {
                 const { Map } = await loader.importLibrary("maps");
+                const { AdvancedMarkerElement } = await loader.importLibrary("marker");
                 const map = new Map(mapRef.current as HTMLElement, mapOptions);
-                setTimeout(() => {
-                    new google.maps.Marker({
-                        position: MY_LAT_LNG,
-                        map,
-                        title: "I'm here!",
-                        animation: google.maps.Animation.DROP
-                    });
-                }, 2000);
+                new AdvancedMarkerElement({
+                    position: MY_LAT_LNG,
+                    map,
+                    title: "I'm here!"
+                });
             } catch (error) {
                 console.error(error);
             }
