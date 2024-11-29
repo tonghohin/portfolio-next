@@ -18,36 +18,23 @@ export default function Page() {
             <section>
                 <article>
                     <div>
-                        <h3>Company Website for NovaXpress</h3>
+                        <h3>Screen Sharing Application</h3>
                         <p>
-                            Single-handedly built with <em>TypeScript</em>, <em>React</em>, <em>Express</em> and <em>MongoDB</em>.
+                            A real-time screen sharing application built with <em>Next.js</em>, <em>WebRTC</em>, and <em>PeerJS</em>. Create or join rooms to share your screen with others instantly.
                         </p>
                     </div>
-                    <Image alt="Company Website for NovaXpress Work Sample" src="/images/work-novaxpress.webp" width={600} height={500} />
-                    <a target="_blank" rel="noreferrer" href="https://novaxpress.ca"></a>
+                    <Image alt="Screen Sharing Application Work Sample" src="/images/work-screen-sharing.webp" width={600} height={500} />
+                    <a target="_blank" href="https://github.com/tonghohin/screen-sharing"></a>
                 </article>
                 <article>
                     <div>
-                        <h3>Property Management Portal</h3>
-                        <p>This is a property management portal built with TypeScript and JavaScript.</p>
+                        <h3>Halifax Bus Tracker App</h3>
                         <p>
-                            <em>Frontend: </em>React, Redux, Tailwind CSS
-                        </p>
-                        <p>
-                            <em>Backend: </em>Node.js, Express
-                        </p>
-                        <p>
-                            <em>Database: </em>MongoDB, Mongoose, Firebase
-                        </p>
-                        <p>
-                            <em>Authentication: </em>JWT, Firebase
-                        </p>
-                        <p>
-                            <em>Hosting: </em>Cyclic
+                            This is an application that tracks the real-time data of all the Halifax buses on the road! I'm using <em>Leaflet.js</em> and <em>geoJSON</em> for mapping the bus locations.
                         </p>
                     </div>
-                    <Image alt="Property Management Portal Work Sample" src="/images/work-portal.webp" width={600} height={500} />
-                    <a target="_blank" rel="noreferrer" href="https://github.com/tonghohin/firebase-portal"></a>
+                    <Image alt="Halifax Bus Tracker App Work Sample" src="/images/work-bus.webp" width={600} height={500} />
+                    <a target="_blank" href="https://halifax-bus-tracker.vercel.app"></a>
                 </article>
                 <article>
                     <div>
@@ -84,23 +71,36 @@ export default function Page() {
                 </article>
                 <article>
                     <div>
-                        <h3>Halifax Bus Tracker App</h3>
+                        <h3>Company Website for NovaXpress</h3>
                         <p>
-                            This is an application that tracks the real-time data of all the Halifax buses on the road! I'm using <em>Leaflet.js</em> and <em>geoJSON</em> for mapping the bus locations.
+                            Single-handedly built with <em>TypeScript</em>, <em>React</em>, <em>Express</em> and <em>MongoDB</em>.
                         </p>
                     </div>
-                    <Image alt="Halifax Bus Tracker App Work Sample" src="/images/work-bus.webp" width={600} height={500} />
-                    <a target="_blank" href="https://halifax-bus-tracker.vercel.app"></a>
+                    <Image alt="Company Website for NovaXpress Work Sample" src="/images/work-novaxpress.webp" width={600} height={500} />
+                    <a target="_blank" rel="noreferrer" href="https://novaxpress.ca"></a>
                 </article>
                 <article>
                     <div>
-                        <h3>Weather Forecast App</h3>
+                        <h3>Property Management Portal</h3>
+                        <p>This is a property management portal built with TypeScript and JavaScript.</p>
                         <p>
-                            This is an application for checking the current weather and weather forecast of any locations! I'm using the <em>Fetch API</em> to retrieve the data and <em>DOM API</em> to display the data in the UI.
+                            <em>Frontend: </em>React, Redux, Tailwind CSS
+                        </p>
+                        <p>
+                            <em>Backend: </em>Node.js, Express
+                        </p>
+                        <p>
+                            <em>Database: </em>MongoDB, Mongoose, Firebase
+                        </p>
+                        <p>
+                            <em>Authentication: </em>JWT, Firebase
+                        </p>
+                        <p>
+                            <em>Hosting: </em>Cyclic
                         </p>
                     </div>
-                    <Image alt="Weather Forecast App Work Sample" src="/images/work-weather.webp" width={600} height={500} />
-                    <a target="_blank" href="https://tonghohin.github.io/weather-forecast-app/"></a>
+                    <Image alt="Property Management Portal Work Sample" src="/images/work-portal.webp" width={600} height={500} />
+                    <a target="_blank" rel="noreferrer" href="https://github.com/tonghohin/firebase-portal"></a>
                 </article>
             </section>
         </main>
