@@ -6,6 +6,5 @@ See it in action at https://tonghohin.vercel.app
 
 -   TypeScript
 -   Next.js
--   React
--   CSS
 -   Nodemailer
+-   Google Maps
