@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </Link>
                 </nav>
                 {children}
-                <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );
