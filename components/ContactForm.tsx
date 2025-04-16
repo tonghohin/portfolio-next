@@ -1,9 +1,9 @@
 "use client";
 
-import Spinner from "@/components/Spinner";
+import { Spinner } from "@/components/Spinner";
 import { useState } from "react";
 
-export default function ContactForm() {
+export function ContactForm() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
     const [isSuccessful, setIsSuccessful] = useState<null | boolean>(null);
     const [isSending, setIsSending] = useState(false);

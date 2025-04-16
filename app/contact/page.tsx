@@ -1,7 +1,7 @@
-import ContactForm from "@/components/ContactForm";
-import Map from "@/components/Map";
-import "./contact.css";
+import { ContactForm } from "@/components/ContactForm";
+import { Map } from "@/components/Map";
 import { Metadata } from "next";
+import "./contact.css";
 
 export const metadata: Metadata = {
     title: "Hin | Full Stack Developer - Contact"

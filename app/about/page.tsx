@@ -1,4 +1,4 @@
-import FunFacts from "@/components/FunFacts";
+import { FunFacts } from "@/components/FunFacts";
 import { Metadata } from "next";
 import Image from "next/image";
 import "./about.css";
