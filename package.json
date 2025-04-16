@@ -9,11 +9,14 @@
     },
     "dependencies": {
         "@googlemaps/js-api-loader": "^1.16.2",
+        "@tailwindcss/postcss": "^4.1.4",
         "@vercel/speed-insights": "^1.2.0",
         "next": "15.3.0",
         "nodemailer": "^6.9.9",
+        "postcss": "^8.5.3",
         "react": "19.1.0",
-        "react-dom": "19.1.0"
+        "react-dom": "19.1.0",
+        "tailwindcss": "^4.1.4"
     },
     "devDependencies": {
         "@types/google.maps": "^3.53.5",
