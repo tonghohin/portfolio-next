@@ -2,8 +2,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
-import Script from "next/script";
-import "./style.css";
+import { ClarityScript } from "./_components/ClarityScript";
+import "./globals.css";
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"], display: "swap" });
 
@@ -11,26 +11,12 @@ export const metadata = {
     authors: { name: "Hin Tong" },
     title: "Hin | Full Stack Developer",
     description: "Hi there! I'm Hin, a full stack developer based in Canada. Get in touch with me!",
-    keywords: ["Full Stack", "Developer", "Canada", "Hin Tong"],
-    other: {
-        "msvalidate.01": "AD17407C3C9846839130F82E96DA68F6",
-        "google-site-verification": "2LN9DEDc4V6MxSyl_z25KsXjm-D39d8SWmubhBCW9Vc"
-    }
+    keywords: ["Full Stack", "Developer", "Canada", "Hin Tong"]
 } satisfies Metadata;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className={roboto.className}>
-            <head>
-                <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon.png" />
-                <Script id="clarityScript" type="text/javascript">
-                    {`(function(c,l,a,r,i,t,y){
-                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-                })(window, document, "clarity", "script", "i53d7i7ttw");`}
-                </Script>
-            </head>
             <body>
                 <nav>
                     <Link id="logo" href="/" />
@@ -49,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </nav>
                 {children}
                 <SpeedInsights />
+                <ClarityScript />
             </body>
         </html>
     );
