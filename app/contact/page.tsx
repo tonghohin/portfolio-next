@@ -1,6 +1,6 @@
-import { ContactForm } from "@/components/ContactForm";
-import { Map } from "@/components/Map";
 import { Metadata } from "next";
+import { ContactForm } from "./_components/ContactForm";
+import { Map } from "./_components/Map";
 import "./contact.css";
 
 export const metadata: Metadata = {

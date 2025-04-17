@@ -1,6 +1,6 @@
 "use client";
 
-import { Spinner } from "@/components/Spinner";
+import { Spinner } from "@/app/contact/_components/Spinner";
 import { useState } from "react";
 
 export function ContactForm() {

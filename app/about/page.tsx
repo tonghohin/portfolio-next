@@ -1,6 +1,6 @@
-import { FunFacts } from "@/components/FunFacts";
 import { Metadata } from "next";
 import Image from "next/image";
+import { FunFacts } from "./_components/FunFacts";
 import "./about.css";
 
 export const metadata: Metadata = {
