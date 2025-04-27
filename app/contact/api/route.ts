@@ -26,11 +26,7 @@ async function sendEmail(formName: string, formMessage: string, formEmail: strin
         from: process.env.EMAIL_SENDER,
         to: process.env.EMAIL_RECEIVER,
         subject: `Message from ${formName}`,
-        text: `
-    Name: ${formName}
-    Message: ${formMessage}
-    Email: ${formEmail}
-    `
+        text: `Name: ${formName} | Message: ${formMessage} | Email: ${formEmail}`
     };
 
     try {
