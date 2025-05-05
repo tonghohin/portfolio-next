@@ -1,4 +1,5 @@
 import { BuildingIcon, BusFrontIcon, ChartLineIcon, CopyIcon, FilePenIcon, MessagesSquareIcon } from "lucide-react";
+import * as motion from "motion/react-client";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ProjectCard } from "./_components/project-card";
@@ -76,7 +77,16 @@ export default async function Projects() {
     return (
         <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-3">
             {projects.map((project) => (
-                <ProjectCard key={project.title} {...project} />
+                <motion.div
+                    key={project.title}
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                        opacity: 1,
+                        transition: { duration: 1 }
+                    }}
+                    viewport={{ once: true }}>
+                    <ProjectCard {...project} />
+                </motion.div>
             ))}
         </div>
     );

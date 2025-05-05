@@ -1,10 +1,17 @@
+import * as motion from "motion/react-client";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "./_components/contact-form";
-import type { Metadata } from "next";
 
 export default function Contact() {
     return (
-        <div className="flex flex-col gap-4">
+        <motion.div
+            className="flex flex-col gap-4"
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: { duration: 1 }
+            }}>
             <p>
                 Get in touch or send me an email directly at{" "}
                 <Link href="mailto:tonghohin77@gmail.com" className="font-semibold">
@@ -13,7 +20,7 @@ export default function Contact() {
                 .
             </p>
             <ContactForm />
-        </div>
+        </motion.div>
     );
 }
 
