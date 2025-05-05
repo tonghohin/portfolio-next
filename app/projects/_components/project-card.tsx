@@ -7,7 +7,7 @@ import { Project } from "../_types/project-type";
 
 export function ProjectCard({ title, icon, description, technologies, demoUrl, repoUrl, repoStats }: Project) {
     return (
-        <Card>
+        <Card className="size-full">
             <CardHeader>
                 <CardTitle className="flex flex-col justify-between gap-1.5 sm:flex-row">
                     <div className="flex items-center gap-1.5">

@@ -5,7 +5,7 @@ import { SmileIcon } from "lucide-react";
 import { useState } from "react";
 
 export function FunFacts() {
-    const FUN_FACTS = ["I've been playing guitar for more than 10 years.", "I cycled around whole Taiwan in 10 days.", "I did skydiving twice.", "I swam under the Victoria Falls.", "I'm fluent in three languages.", "My favourite movie is Pulp Fiction.", "My favourite song is Comfortably Numb.", "I broke into tech without a CS degree.", "I traveled solo in Africa and Europe.", "I like La La Land."];
+    const FUN_FACTS = ["I've been playing guitar for more than 10 years.", "I cycled around whole Taiwan in 10 days.", "I did skydiving twice.", "I swam under the Victoria Falls.", "I'm fluent in three languages.", "My favourite movie is Pulp Fiction.", "My favourite song is Comfortably Numb.", "I broke into tech without a CS degree.", "I traveled solo in Africa and Europe.", "I like La La Land.", "I can curse in French."];
 
     const [index, setIndex] = useState<number | null>(null);
 
@@ -21,7 +21,9 @@ export function FunFacts() {
             <PopoverTrigger>
                 <SmileIcon className="text-primary size-4" />
             </PopoverTrigger>
-            <PopoverContent className="w-fit text-sm">{index !== null && FUN_FACTS[index]}</PopoverContent>
+            <PopoverContent className="w-fit text-sm" collisionPadding={16}>
+                {index !== null && FUN_FACTS[index]}
+            </PopoverContent>
         </Popover>
     );
 }
