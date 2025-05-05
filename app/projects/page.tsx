@@ -1,4 +1,5 @@
 import { BuildingIcon, BusFrontIcon, ChartLineIcon, CopyIcon, FilePenIcon, MessagesSquareIcon } from "lucide-react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ProjectCard } from "./_components/project-card";
 import { Project } from "./_types/project-type";
@@ -80,3 +81,7 @@ export default async function Projects() {
         </div>
     );
 }
+
+export const metadata = {
+    title: "Projects"
+} satisfies Metadata;

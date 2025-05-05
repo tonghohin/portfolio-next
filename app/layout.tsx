@@ -16,9 +16,12 @@ const montserrat = Montserrat({
 
 export const metadata = {
     authors: { name: "Hin Tong" },
-    title: "Hin | Full Stack Developer",
+    title: {
+        template: "Hin | %s ",
+        default: "Full Stack Developer"
+    },
     description: "Hi there! I'm Hin, a full stack developer based in Canada. Get in touch with me!",
-    keywords: ["Full Stack", "Developer", "Canada", "Hin Tong"]
+    keywords: ["Full Stack Developer", "Software Developer", "Canada", "Hin Tong"]
 } satisfies Metadata;
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactForm } from "./_components/contact-form";
+import type { Metadata } from "next";
 
 export default function Contact() {
     return (
@@ -15,3 +16,7 @@ export default function Contact() {
         </div>
     );
 }
+
+export const metadata = {
+    title: "Contact"
+} satisfies Metadata;
