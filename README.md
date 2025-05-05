@@ -4,7 +4,8 @@ See it in action at https://tonghohin.vercel.app
 
 ### Built With
 
--   TypeScript
--   Next.js
--   Nodemailer
--   Google Maps
+- TypeScript
+- Next.js
+- Tailwind CSS
+- shadcn/ui
+- Nodemailer

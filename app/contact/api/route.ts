@@ -1,39 +1,39 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { FormSchema, formSchema } from "../_schemas/form-schema";
 
 export async function POST(request: NextRequest) {
-    const req = await request.json();
-    const { name, email, message } = req;
-
-    if (name && email && message) {
-        const result = await sendEmail(name, message, email);
-        return NextResponse.json(result);
-    } else {
+    try {
+        const req = await request.json();
+        const parsedReq = formSchema.parse(req);
+        await sendEmail(parsedReq);
+        return NextResponse.json({ success: true });
+    } catch (error) {
+        console.log("--- POST error ---", error);
         return NextResponse.json({ success: false });
     }
 }
 
-async function sendEmail(formName: string, formMessage: string, formEmail: string) {
-    const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: process.env.EMAIL_SENDER,
-            pass: process.env.PASSWORD
-        }
-    });
-
-    const message = {
-        from: process.env.EMAIL_SENDER,
-        to: process.env.EMAIL_RECEIVER,
-        subject: `Message from ${formName}`,
-        text: `Name: ${formName} | Message: ${formMessage} | Email: ${formEmail}`
-    };
-
+async function sendEmail({ name, email, message }: FormSchema) {
     try {
-        await transporter.sendMail(message);
-        return { success: true };
+        const transporter = nodemailer.createTransport({
+            service: "gmail",
+            auth: {
+                user: process.env.EMAIL_SENDER,
+                pass: process.env.PASSWORD
+            }
+        });
+
+        const mailOptions = {
+            from: process.env.EMAIL_SENDER,
+            to: process.env.EMAIL_RECEIVER,
+            subject: `Message from ${name}`,
+            text: `Name: ${name} | Message: ${message} | Email: ${email}`
+        };
+
+        await transporter.sendMail(mailOptions);
     } catch (error) {
-        console.error("--- nodemailer error ---", error);
-        return { success: false };
+        console.error("--- sendEmail error ---", error);
+        throw error;
     }
 }

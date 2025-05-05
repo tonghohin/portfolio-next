@@ -1,22 +1,14 @@
-import Link from "next/link";
-import "./home.css";
+export default function About() {
+    const aboutItems = ["Born in Hong Kong. Based in Toronto now.", "I work full stack — from UI to DevOps.", "I've built web apps, CLI tools, and browser extensions.", "I mostly use TypeScript, Next.js, Express, Go, MongoDB, SQL and AWS."];
 
-export default function Page() {
     return (
-        <main id="home">
-            <p className="typewriter" id="firstSentence">
-                Hi, I'm <span id="name">Hin</span>.
-            </p>
-            <p className="typewriter" id="secondSentence">
-                I'm a Full Stack
-            </p>
-            <p className="typewriter" id="thirdSentence">
-                Developer.
-            </p>
-            <footer>TypeScript, Next.js, Express, Go, MongoDB, SQL and more...</footer>
-            <Link href="/work" id="previousWork">
-                See my previous work!
-            </Link>
-        </main>
+        <ul className="flex flex-col gap-4">
+            {aboutItems.map((item, index) => (
+                <li key={index} className="flex items-center gap-4">
+                    <span className="self-start">•</span>
+                    <p>{item}</p>
+                </li>
+            ))}
+        </ul>
     );
 }
