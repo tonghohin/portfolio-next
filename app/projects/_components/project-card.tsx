@@ -23,12 +23,12 @@ export function ProjectCard({ title, icon, description, technologies, demoUrl, r
                 </CardTitle>
                 <CardDescription>{description}</CardDescription>
             </CardHeader>
-            <CardContent className="flex flex-1 flex-wrap items-start gap-1.5">
+            <CardContent className="flex flex-wrap items-start gap-1.5">
                 {technologies.map((technology, index) => (
                     <Badge key={index}>{technology}</Badge>
                 ))}
             </CardContent>
-            <CardFooter className="flex flex-col items-stretch gap-4 sm:flex-row">
+            <CardFooter className="flex flex-1 flex-col items-stretch gap-4 sm:flex-row sm:items-end">
                 {demoUrl || repoUrl ? (
                     <>
                         {demoUrl && (
