@@ -1,11 +1,18 @@
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import Link from "next/link";
-import { ClarityScript } from "./_components/ClarityScript";
+import { Montserrat } from "next/font/google";
+import { Toaster } from "sonner";
+import { ClarityScript } from "./_components/clarity-script";
+import { Footer } from "./_components/footer";
+import { Header } from "./_components/header";
+import { SideNav } from "./_components/side-nav";
 import "./globals.css";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"], display: "swap" });
+const montserrat = Montserrat({
+    variable: "--font-montserrat",
+    subsets: ["latin"]
+});
 
 export const metadata = {
     authors: { name: "Hin Tong" },
@@ -14,28 +21,25 @@ export const metadata = {
     keywords: ["Full Stack", "Developer", "Canada", "Hin Tong"]
 } satisfies Metadata;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" className={roboto.className}>
-            <body>
-                <nav>
-                    <Link id="logo" href="/" />
-                    <Link className="navItems" href="/about">
-                        About
-                    </Link>
-                    <Link className="navItems" href="/skills">
-                        Skills
-                    </Link>
-                    <Link className="navItems" href="/work">
-                        Work
-                    </Link>
-                    <Link className="navItems" href="/contact">
-                        Contact
-                    </Link>
-                </nav>
-                {children}
+        <html lang="en">
+            <body className={`${montserrat.variable} bg-background text-foreground flex h-dvh w-dvw p-4 font-light antialiased`}>
+                <main className="flex flex-1 flex-col gap-4">
+                    <div className="flex flex-1 flex-col gap-4 overflow-hidden border p-4 md:gap-8 md:p-8">
+                        <Header />
+                        <div className="flex gap-8 overflow-hidden md:gap-16">
+                            <SideNav />
+                            <div className="flex-1 overflow-hidden">
+                                <ScrollArea className="size-full">{children}</ScrollArea>
+                            </div>
+                        </div>
+                    </div>
+                    <Footer />
+                </main>
                 <SpeedInsights />
                 <ClarityScript />
+                <Toaster richColors />
             </body>
         </html>
     );

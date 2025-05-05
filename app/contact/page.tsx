@@ -1,38 +1,17 @@
-import { Metadata } from "next";
-import { ContactForm } from "./_components/ContactForm";
-import { Map } from "./_components/Map";
-import "./contact.css";
+import Link from "next/link";
+import { ContactForm } from "./_components/contact-form";
 
-export const metadata: Metadata = {
-    title: "Hin | Full Stack Developer - Contact"
-};
-
-export default function Page() {
+export default function Contact() {
     return (
-        <main id="contact">
-            <section id="contactInfo">
-                <h1>
-                    <span>C</span>
-                    <span>o</span>
-                    <span>n</span>
-                    <span>t</span>
-                    <span>a</span>
-                    <span>c</span>
-                    <span>t</span> <span>m</span>
-                    <span>e</span>
-                </h1>
-                <p className="slideIn">
-                    <a id="mail" href="mailto:tonghohin77@gmail.com">
-                        tonghohin77@gmail.com
-                    </a>
-                </p>
-                <aside>
-                    <a className="slideIn" id="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hintong/" />
-                    <a className="slideIn" id="github" target="_blank" rel="noreferrer" href="https://github.com/tonghohin" />
-                </aside>
-                <ContactForm />
-            </section>
-            <Map />
-        </main>
+        <div className="flex flex-col gap-4">
+            <p>
+                Get in touch or send me an email directly at{" "}
+                <Link href="mailto:tonghohin77@gmail.com" className="font-semibold">
+                    tonghohin77@gmail.com
+                </Link>
+                .
+            </p>
+            <ContactForm />
+        </div>
     );
 }
