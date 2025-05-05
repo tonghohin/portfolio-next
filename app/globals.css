@@ -84,4 +84,22 @@
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
+
+  body {
+    @apply bg-linear-120 from-card via-background to-ring animate-gradient-bg bg-size-[200%_200%] text-foreground
+  }
+}
+
+@theme {
+  --animate-gradient-bg: gradientShift 4s infinite alternate;
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0 50%;
+    }
+  }
 }
