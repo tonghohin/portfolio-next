@@ -1,7 +1,7 @@
 import * as motion from "motion/react-client";
 
 export default function About() {
-    const aboutItems = ["Born in Hong Kong. Based in Toronto now.", "I work full stack — from UI to DevOps.", "I've built web apps, CLI tools, and browser extensions.", "I mostly use TypeScript, Next.js, Express, Go, MongoDB, SQL and AWS."];
+    const aboutItems = ["I work full stack — from UI to DevOps.", "I've built web apps, CLI tools, and browser extensions.", "I mostly use TypeScript, Next.js, Express, Go, MongoDB, SQL and AWS.", "Born in Hong Kong. Based in Toronto now."];
 
     return (
         <ul className="flex flex-col gap-4">
