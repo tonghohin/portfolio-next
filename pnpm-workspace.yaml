@@ -1,4 +1,7 @@
+packages:
+    - "."
+
 onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
-  - '@vercel/speed-insights'
-  - sharp
+    - "@tailwindcss/oxide"
+    - "@vercel/speed-insights"
+    - sharp
