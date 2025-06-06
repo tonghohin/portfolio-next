@@ -1,9 +1,7 @@
 import { RepoStats } from "../_types/project-type";
 
 export async function getRepoStats(repoFullName: string) {
-    const response = await fetch(`https://api.github.com/repos/${repoFullName}`, {
-        cache: "force-cache"
-    });
+    const response = await fetch(`https://api.github.com/repos/${repoFullName}`, { next: { revalidate: 3600 } });
     if (!response.ok) return;
 
     const data = await response.json();
