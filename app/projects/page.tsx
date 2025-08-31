@@ -12,7 +12,7 @@ export default async function Projects() {
             title: "Share Your Screen",
             icon: <CopyIcon className="size-4 shrink-0" />,
             description: "A real-time screen sharing application. Share your screen with one simple room code. No downloads or sign-ups required.",
-            technologies: ["TypeScript", "Next.js", "Tailwind CSS", "shadcn/ui", "PeerJS", "WebRTC", "Vercel"],
+            technologies: ["TypeScript", "Next.js", "Tailwind CSS", "shadcn/ui", "WebRTC", "PeerJS", "Vercel"],
             demoUrl: "https://share-your-screen.vercel.app/",
             repoUrl: "https://github.com/tonghohin/screen-sharing",
             repoStats: await getRepoStats("tonghohin/screen-sharing")
@@ -21,26 +21,26 @@ export default async function Projects() {
             title: "Avenue Insights",
             icon: <Image src="/projects/avenue-intelligence.svg" alt="Avenue Intelligence" width={24} height={24} />,
             description: "A data visualization platform that I led and built from the ground up for Avenue Intelligence. With interactive maps, dynamic charts, and customizable tools, it helps users uncover foot traffic trends and make data-driven decisions.",
-            technologies: ["TypeScript", "Go", "Next.js", "Zustand", "Zod", "Tailwind CSS", "shadcn/ui", "Node.js", "Express", "Gin", "MongoDB", "Mongoose", "PostgreSQL", "Vitest", "Playwright", "React Testing Library", "Recharts", "Leaflet.js", "GeoJSON", "OpenAI API", "Github Actions", "AWS", "Terraform", "Docker"]
+            technologies: ["TypeScript", "Next.js", "Node.js", "Express", "Go", "Gin", "AWS", "Docker", "Terraform", "MongoDB", "PostgreSQL", "Mongoose", "Tailwind CSS", "shadcn/ui", "Zustand", "Zod", "Vitest", "Playwright", "React Testing Library", "Recharts", "Leaflet.js", "Google Maps API", "GeoJSON", "OpenAI API", "Github Actions"]
         },
         {
             title: "NovaXpress Business Management System",
             icon: <Image src="/projects/novaXpress.svg" alt="NovaXpress" width={24} height={24} />,
             description: "An internal business management platform developed for NovaXpress to streamline daily operations. Features include order tracking, dispatch coordination, driver management, and financial tools, all tailored to the needs of a courier service company.",
-            technologies: ["TypeScript", "React", "Redux", "CSS", "Node.js", "Express", "MongoDB", "Stripe", "Google Maps API", "Github Actions"]
+            technologies: ["TypeScript", "React", "Node.js", "Express", "MongoDB", "Redux", "Stripe", "Google Maps API", "CSS", "Github Actions"]
         },
         {
             title: "NovaXpress Company Website",
             icon: <Image src="/projects/novaXpress.svg" alt="NovaXpress" width={24} height={24} />,
             description: "The official website for NovaXpress Courier Services. I designed and developed this site to highlight the company's offerings, enable real-time tracking of deliveries, and support online order placement with secure Stripe payments.",
-            technologies: ["TypeScript", "React", "Redux", "CSS", "Node.js", "Express", "MongoDB", "Stripe", "Google Maps API", "Github Actions"],
+            technologies: ["TypeScript", "React", "Node.js", "Express", "MongoDB", "Redux", "Stripe", "Google Maps API", "CSS", "Github Actions"],
             demoUrl: "https://novaxpress.ca/"
         },
         {
             title: "Risk Data Visualization Dashboard",
             icon: <ChartLineIcon className="size-4 shrink-0" />,
             description: "A data visualization task I got for an interview. I was given a climate risk dataset and asked to build a dashboard that visualizes the data. It was a great opportunity for me and improve my data visualization skills.",
-            technologies: ["TypeScript", "Next.js", "Tailwind CSS", "Jest", "React Testing Library", "Chart.js", "Leaflet.js", "GeoJSON", "Google Maps API", "Vercel"],
+            technologies: ["TypeScript", "Next.js", "Tailwind CSS", "Chart.js", "Leaflet.js", "GeoJSON", "Google Maps API", "Vercel", "Jest", "React Testing Library"],
             demoUrl: "https://risk-viz.vercel.app/",
             repoUrl: "https://github.com/tonghohin/risk-viz"
         },
