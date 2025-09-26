@@ -21,7 +21,15 @@ export default async function Projects() {
             title: "Avenue Insights",
             icon: <Image src="/projects/avenue-intelligence.svg" alt="Avenue Intelligence" width={24} height={24} />,
             description: "A data visualization platform that I led and built from the ground up for Avenue Intelligence. With interactive maps, dynamic charts, and customizable tools, it helps users uncover foot traffic trends and make data-driven decisions.",
-            technologies: ["TypeScript", "Next.js", "Node.js", "Express", "Go", "Gin", "AWS", "Docker", "Terraform", "MongoDB", "PostgreSQL", "Mongoose", "Tailwind CSS", "shadcn/ui", "Zustand", "Zod", "Vitest", "Playwright", "React Testing Library", "Recharts", "Leaflet.js", "Google Maps API", "GeoJSON", "OpenAI API", "Github Actions"]
+            technologies: ["TypeScript", "Next.js", "Node.js", "Express", "Go", "Gin", "AWS", "Docker", "Terraform", "MongoDB", "PostgreSQL", "Mongoose", "Tailwind CSS", "shadcn/ui", "Zustand", "Zod", "Vitest", "Playwright", "React Testing Library", "Recharts", "Leaflet", "Google Maps API", "GeoJSON", "OpenAI API", "Github Actions"]
+        },
+        {
+            title: "shadcn Map",
+            icon: <Image src="/projects/shadcn-map.png" alt="shadcn Map" width={24} height={24} />,
+            description: "A map component built for shadcn/ui.",
+            technologies: ["shadcn/ui", "Next.js", "TypeScript", "Leaflet"],
+            demoUrl: "https://shadcn-map.vercel.app/",
+            repoUrl: "https://github.com/tonghohin/shadcn-map"
         },
         {
             title: "NovaXpress Business Management System",
@@ -40,7 +48,7 @@ export default async function Projects() {
             title: "Risk Data Visualization Dashboard",
             icon: <ChartLineIcon className="size-4 shrink-0" />,
             description: "A data visualization task I got for an interview. I was given a climate risk dataset and asked to build a dashboard that visualizes the data. It was a great opportunity for me and improve my data visualization skills.",
-            technologies: ["TypeScript", "Next.js", "Tailwind CSS", "Chart.js", "Leaflet.js", "GeoJSON", "Google Maps API", "Vercel", "Jest", "React Testing Library"],
+            technologies: ["TypeScript", "Next.js", "Tailwind CSS", "Chart.js", "Leaflet", "GeoJSON", "Google Maps API", "Vercel", "Jest", "React Testing Library"],
             demoUrl: "https://risk-viz.vercel.app/",
             repoUrl: "https://github.com/tonghohin/risk-viz"
         },
@@ -69,7 +77,7 @@ export default async function Projects() {
             title: "Bus Tracker",
             icon: <BusFrontIcon className="size-4 shrink-0" />,
             description: "A web app that tracks and visualizes all Halifax Transit buses on an interactive map in real-time. It was an assignment for my course at NSCC, Halifax. I was so proud of it because it's the first time I built something that I can actually use in real life!",
-            technologies: ["JavaScript", "HTML", "CSS", "Leaflet.js", "GeoJSON"],
+            technologies: ["JavaScript", "HTML", "CSS", "Leaflet", "GeoJSON"],
             repoUrl: "https://github.com/tonghohin/bus-tracker-app"
         }
     ] satisfies Project[];

@@ -39,7 +39,7 @@ type Technologies =
     // Data Visualization
     | "Chart.js"
     | "Recharts"
-    | "Leaflet.js"
+    | "Leaflet"
     | "GeoJSON"
 
     // Realtime & Communication
