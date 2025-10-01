@@ -29,7 +29,8 @@ export default async function Projects() {
             description: "A map component built for shadcn/ui.",
             technologies: ["shadcn/ui", "Next.js", "TypeScript", "Leaflet"],
             demoUrl: "https://shadcn-map.vercel.app/",
-            repoUrl: "https://github.com/tonghohin/shadcn-map"
+            repoUrl: "https://github.com/tonghohin/shadcn-map",
+            repoStats: await getRepoStats("tonghohin/shadcn-map")
         },
         {
             title: "NovaXpress Business Management System",
