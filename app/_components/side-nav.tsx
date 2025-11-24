@@ -3,8 +3,7 @@ import { NavItem } from "./nav-item";
 export function SideNav() {
     const navItems = [
         { title: "About", href: "/" },
-        { title: "Projects", href: "/projects" },
-        { title: "Contact", href: "/contact" }
+        { title: "Projects", href: "/projects" }
     ];
 
     return (

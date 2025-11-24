@@ -1,6 +1,7 @@
-import { GithubIcon } from "lucide-react";
 import Link from "next/link";
+import { GithubIcon } from "./github-icon";
 import { LinkedinIcon } from "./linkedin-icon";
+import { XIcon } from "./x-icon";
 
 export function Footer() {
     return (
@@ -11,6 +12,9 @@ export function Footer() {
             </Link>
             <Link href="https://www.linkedin.com/in/hintong">
                 <LinkedinIcon className="hover:text-primary size-4 transition-colors" />
+            </Link>
+            <Link href="https://x.com/tonghohin77">
+                <XIcon className="hover:text-primary size-4 transition-colors" />
             </Link>
         </footer>
     );

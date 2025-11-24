@@ -1,7 +1,8 @@
+import { GithubIcon } from "@/app/_components/github-icon";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ExternalLinkIcon, GitForkIcon, GithubIcon, ShieldAlertIcon, StarIcon } from "lucide-react";
+import { ExternalLinkIcon, GitForkIcon, ShieldAlertIcon, StarIcon } from "lucide-react";
 import Link from "next/link";
 import { Project } from "../_types/project-type";
 

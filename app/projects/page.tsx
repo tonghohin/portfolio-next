@@ -1,4 +1,4 @@
-import { BuildingIcon, BusFrontIcon, ChartLineIcon, CopyIcon, FilePenIcon, MessagesSquareIcon } from "lucide-react";
+import { BinocularsIcon, BuildingIcon, BusFrontIcon, ChartLineIcon, CopyIcon, FilePenIcon, MapIcon, MessagesSquareIcon } from "lucide-react";
 import * as motion from "motion/react-client";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -18,19 +18,28 @@ export default async function Projects() {
             repoStats: await getRepoStats("tonghohin/screen-sharing")
         },
         {
+            title: "shadcn Map",
+            icon: <MapIcon className="size-4 shrink-0" />,
+            description: "A map component built for shadcn/ui.",
+            technologies: ["shadcn/ui", "Next.js", "TypeScript", "Leaflet", "Tailwind CSS"],
+            demoUrl: "https://shadcn-map.vercel.app/",
+            repoUrl: "https://github.com/tonghohin/shadcn-map",
+            repoStats: await getRepoStats("tonghohin/shadcn-map")
+        },
+        {
+            title: "Tour",
+            icon: <BinocularsIcon className="size-4 shrink-0" />,
+            description: "A component for building onboarding tours. Designed to integrate with shadcn/ui.",
+            technologies: ["shadcn/ui", "Next.js", "TypeScript", "Tailwind CSS"],
+            demoUrl: "https://onboarding-tour.vercel.app/",
+            repoUrl: "https://github.com/tonghohin/tour",
+            repoStats: await getRepoStats("tonghohin/tour")
+        },
+        {
             title: "Avenue Insights",
             icon: <Image src="/projects/avenue-intelligence.svg" alt="Avenue Intelligence" width={24} height={24} />,
             description: "A data visualization platform that I led and built from the ground up for Avenue Intelligence. With interactive maps, dynamic charts, and customizable tools, it helps users uncover foot traffic trends and make data-driven decisions.",
             technologies: ["TypeScript", "Next.js", "Node.js", "Express", "Go", "Gin", "AWS", "Docker", "Terraform", "MongoDB", "PostgreSQL", "Mongoose", "Tailwind CSS", "shadcn/ui", "Zustand", "Zod", "Vitest", "Playwright", "React Testing Library", "Recharts", "Leaflet", "Google Maps API", "GeoJSON", "OpenAI API", "Github Actions"]
-        },
-        {
-            title: "shadcn Map",
-            icon: <Image src="/projects/shadcn-map.png" alt="shadcn Map" width={24} height={24} />,
-            description: "A map component built for shadcn/ui.",
-            technologies: ["shadcn/ui", "Next.js", "TypeScript", "Leaflet"],
-            demoUrl: "https://shadcn-map.vercel.app/",
-            repoUrl: "https://github.com/tonghohin/shadcn-map",
-            repoStats: await getRepoStats("tonghohin/shadcn-map")
         },
         {
             title: "NovaXpress Business Management System",

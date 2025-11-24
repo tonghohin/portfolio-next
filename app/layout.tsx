@@ -3,7 +3,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import { Toaster } from "sonner";
 import { ClarityScript } from "./_components/clarity-script";
 import { Footer } from "./_components/footer";
 import { Header } from "./_components/header";
@@ -44,7 +43,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <Analytics />
                 <SpeedInsights />
                 <ClarityScript />
-                <Toaster richColors />
             </body>
         </html>
     );
