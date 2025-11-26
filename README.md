@@ -8,4 +8,3 @@ See it in action at https://tonghohin.vercel.app
 - Next.js
 - Tailwind CSS
 - shadcn/ui
-- Nodemailer
