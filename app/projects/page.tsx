@@ -42,6 +42,26 @@ export default async function Projects() {
             technologies: ["TypeScript", "Next.js", "Node.js", "Express", "Go", "Gin", "AWS", "Docker", "Terraform", "MongoDB", "PostgreSQL", "Mongoose", "Tailwind CSS", "shadcn/ui", "Zustand", "Zod", "Vitest", "Playwright", "React Testing Library", "Recharts", "Leaflet", "Google Maps API", "GeoJSON", "OpenAI API", "Github Actions"]
         },
         {
+            title: "Applied",
+            icon: <Image src="/projects/applied.svg" alt="Applied" width={24} height={24} />,
+            description: "An automated job application tool. It finds and scores matching LinkedIn postings against your resume, then an AI agent fills out and submits applications on your behalf.",
+            technologies: [
+                "TypeScript",
+                "Next.js",
+                "tRPC",
+                "Better Auth",
+                "BullMQ",
+                "Redis",
+                "PostgreSQL",
+                "Drizzle ORM",
+                "Playwright",
+                "Docker",
+                "Langfuse",
+                "Github Actions"
+            ],
+            repoUrl: "https://github.com/tonghohin/applied"
+        },
+        {
             title: "NovaXpress Business Management System",
             icon: <Image src="/projects/novaXpress.svg" alt="NovaXpress" width={24} height={24} />,
             description: "An internal business management platform developed for NovaXpress to streamline daily operations. Features include order tracking, dispatch coordination, driver management, and financial tools, all tailored to the needs of a courier service company.",

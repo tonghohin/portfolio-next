@@ -22,13 +22,18 @@ type Technologies =
     | "Node.js"
     | "Express"
     | "Gin"
+    | "tRPC"
+    | "Better Auth"
+    | "BullMQ"
 
     // Databases
     | "MongoDB"
     | "Mongoose"
     | "PostgreSQL"
+    | "Drizzle ORM"
     | "MySQL"
     | "Firebase"
+    | "Redis"
 
     // Testing
     | "Vitest"
@@ -57,7 +62,10 @@ type Technologies =
     | "AWS"
     | "Terraform"
     | "Docker"
-    | "Vercel";
+    | "Vercel"
+
+    // Observability
+    | "Langfuse";
 
 export interface RepoStats {
     stars: number;
